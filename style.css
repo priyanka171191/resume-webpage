@@ -1,0 +1,116 @@
+html,body,div{
+border:0;
+font:inherit;
+font-size:100%;
+margin:0;
+padding:0;
+vertical-align:baseline;
+}
+
+html, body {background: #181818;  font-size: px; color: #222;}
+
+
+#cv {
+	width: 90%;
+	max-width: 800px;
+	background: #f3f3f3;
+	margin: 30px auto;
+}
+
+.mainDetails {
+	padding: 1px 35px;
+}
+
+#headshot {
+	width: 12.5%;
+	float: left;
+	margin-right: 30px;
+}
+
+#headshot img {
+	width: 120%;
+	height: 300%
+	height: auto;
+	-webkit-border-radius: 50px;
+	border-radius: 50px;
+}
+
+#name {
+	float: left;
+	font-family: 'Arial';
+	font-size: 12px;
+}
+
+#name h1 {
+	font-size: 2.5em;
+	font-weight: 700;
+	font-family: 'Arial';
+	margin-bottom: 0;
+	color:DimGray;
+}
+
+#name h2 {
+	font-size: 2em;
+	margin-left: 2px;
+	font-family: 'Arial';
+	margin-top: 0;
+	margin-bottom: 0;
+	color:DimGray;
+}
+
+#contactDetails {
+	float: right;
+	margin-top: 20px;
+}
+
+#contactDetails ul {
+	list-style-type: none;
+	font-size: 0.9em;
+	margin-top: 2px;
+}
+
+#contactDetails ul li {
+	margin-bottom: 3px;
+	color: #444;
+}
+
+#contactDetails ul li a, a[href^=tel] { 
+	text-decoration: none;
+	
+}
+
+#contactDetails ul li a:hover { 
+	color: #cf8a05;
+}
+
+table.myTable { 
+  border: 2px solid Salmon;
+  border-radius: 13px; 
+  border-spacing: 0;
+  text-align: center;
+  }
+table.myTable td, 
+table.myTable th {	
+  border-bottom: 2px solid Salmon;
+  padding: 10px; 
+  }
+table.myTable tr:last-child > td {
+  border-bottom: none;
+}
+
+.btn {
+  background-color: coral  ;
+  border: none;
+  color: white;
+  padding: 10px 25px;
+  cursor: pointer;
+  font-size: 15px;
+}
+.btn:hover {
+  background-color: Salmon;
+}
+
+#mail{
+color:Salmon;}
+
+

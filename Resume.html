@@ -1,0 +1,176 @@
+<!--The following HTML code creates a resume web page-->
+<!DOCTYPE html>
+<html>
+   <head>
+	  <!--Creates a link between html and css sheet-->
+      <link rel="stylesheet" href="style.css">
+   </head>
+   
+   <!--Body of the page-->
+   <body>
+      <div id="cv">
+         <div class="mainDetails">
+            <div id="headshot">
+               <img src="profilePic.jpeg" alt="My Picture">
+            </div>
+            <div id="name">
+               <h1>Priyanka Mahakul</h1>
+               <h2>Data Analyst</h2>
+               <svg height="50" width="50">
+                  <defs>
+                     <radialGradient id="logo" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+                        <stop offset="0%" style="stop-color:rgb(255,255,255);stop-opacity:0" />
+                        <stop offset="100%" style="stop-color:rgb(255,218,185);stop-opacity:1" />
+                     </radialGradient>
+                  </defs>
+                  <circle cx="25" cy="25" r="25" fill="url(#logo)"/>
+                  <text fill="#FF7F50" font-size="20" font-family="Palatino" x="10" y="32">PM</text>
+               </svg>
+            </div>
+            <div id="contactDetails">
+               <ul>
+                  <li><img  src="mailIcon.png" alt="e" width="18" height="12"></img><a id="mail" href="mailto:priyanka.mahakul17@gmail.com"> :priyanka.mahakul17@gmail.com</a></li>
+                  <li><img src="phoneIcon.png" alt="m" width="18" height="15"></img> : (732)-766-0552</li>
+                  <li><img src="Linkedin.png" alt="m" width="18" height="15"></img> <a href="https://www.linkedin.com/feed/"> :More about me</a></li>
+                  <li>
+                     <a href="Resume.pdf" download="Resume_PDF">
+                        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+                        <button class="btn"><i class="fa fa-download"></i> Download</button>
+                     </a>
+                  </li>
+               </ul>
+            </div>
+            <div class="clear"></div>
+         </div>
+         <div>
+            <svg height="10" width="800">
+               <line x1="0" y1="0" x2="800" y2="0" style="stroke:Salmon;stroke-width:4" />
+            </svg>
+         </div>
+         <div class="mainDetails">
+            <h3>
+               <svg width="200" height="50">
+                  <rect x="0" y="0" rx="10" ry="12" width="150" height="40" style="fill:Salmon;" />
+                  <text fill="white" font-size="20" font-family="Verdana" x="20" y="25">
+                     Education:
+                  </text>
+               </svg>
+            </h3>
+            <table class="myTable" style="width:100%">
+               <tr>
+                  <th style="border-right: 2px solid Salmon;">Degree</th>
+                  <th style="border-right: 2px solid Salmon;">Graduation Year</th>
+                  <th style="border-right: 2px solid Salmon;">University</th>
+                  <th style="border-right: 2px solid Salmon;">Major</th>
+                  <th>CGPA</th>
+               </tr>
+               <tr>
+                  <td style="border-right: 2px solid Salmon;">Bachelor of Technology</td>
+                  <td style="border-right: 2px solid Salmon;">2013</td>
+                  <td style="border-right: 2px solid Salmon;">
+                     <a href="https://www.gita.edu.in/">Gandhi Institute For Technological Advancement</a>
+                  </td>
+                  <td style="border-right: 2px solid Salmon;">Electrical and Electronics Engineering</td>
+                  <td>3.6</td>
+               </tr>
+               <tr>
+                  <td style="border-right: 2px solid Salmon;">Masters</td>
+                  <td style="border-right: 2px solid Salmon;">2020</td>
+                  <td style="border-right: 2px solid Salmon;">
+                     <a href="https://www.njcu.edu/">New Jersey City University</a>
+                  </td style="border-right: 2px solid Salmon;">
+                  <td style="border-right: 2px solid Salmon;">Business Analytics and Data Science</td>
+                  <td>4</td>
+               </tr>
+            </table>
+         </div>
+         <div class="mainDetails">
+            <h3>
+               <svg width="400" height="50">
+                  <rect x="0" y="0" rx="10" ry="12" width="250" height="40" style="fill:Salmon;" />
+                  <text fill="white" font-size="20" font-family="Verdana" x="20" y="25">
+                     Technical Skills:
+                  </text>
+               </svg>
+            </h3>
+            <ul>
+               <li><b>Programming Languages:</b> C, C++, Java, HTML, SQL, Python</li>
+               <li><b>Databases::</b> MySQL, Teradata, Exasol, Oracle RDBMS, Microsoft SQL Server, PostGre SQL</li>
+               <li><b>Tools:</b> Tableau, DataStage, TIBCO, Alteryx</li>
+               <li><b>Repository:</b> SVN, GIT</li>
+               <li><b>General software:</b> Microsoft Office (Word, Excel, PowerPoint)</li>
+            </ul>
+         </div>
+         <div class="mainDetails">
+            <h3>
+               <svg width="400" height="50">
+                  <rect x="0" y="0" rx="10" ry="12" width="320" height="40" style="fill:Salmon;" />
+                  <text fill="white" font-size="20" font-family="Verdana" x="20" y="25">
+                     Professional Experience:
+                  </text>
+               </svg>
+            </h3>
+            <p>
+               <a href="https://www.infosys.com/">
+               Infosys Limited
+               </a>, Hyderabad, India<br>
+               <b>Role:</b> Technology Analyst (October 2013- May 2018)
+            </p>
+            <ol>
+               <li><b>Project Title: Customer Relationship Management (September 2017- May 2018)</b></li>
+               <ul>
+                  <li>Extracted and analyzed client’s customer data to identify key metrics; developed business intelligence reports and dashboards in Tableau, driving effective business decisions involving two million customers</li>
+                  <li>Administered Tableau server; handled access restrictions and maintenance of the server, enabling a steady server</li>
+               </ul>
+               <li><b>Project Title: Enterprise Applications (August 2014 - September 2017)</b></li>
+               <ul>
+                  <li>Monitored various DataStage Projects using DataStage Director, defect logging and troubleshooting issues in case of job failures and providing permanent fix for recurring issues</li>
+                  <li>Redesigned and enhanced the projects for performance tuning and to meet customer requirements</li>
+                  <li>Provided knowledge transition to new team members; prepared and conducted in-class training on project specific practices</li>
+               </ul>
+               <li><b>Project Title: Merchandising Support (October 2013 – September 2017)</b></li>
+               <ul>
+                  <li>Administered Tableau server; involved in user maintenance, continent maintenance, access handling and performance recording of dashboards, created and monitored schedules and enabled subscriptions</li>
+                  <li>Operated periodic backup of Tableau repository, log files and periodic cleanup of PostGre SQL database, assuring restore of server configuration, user and content information, supposing an unexpected server breakdown</li>
+                  <li>Audited Tableau Repository for analysis and cleaned up unused workbooks, data sources and failed tasks, to make more space available, ensuring an uninterrupted server</li>
+                  <li>Automated Weekly Status Report using Tableau, saving manual time and effort</li>
+               </ul>
+               <li><b>Project Title: Decision Support System (December 2015- September 2017)</b></li>
+               <ul>
+                  <li>Built an ETL setup for Hierarchy Administration Tool (HAT) Project using DataStage, including analysis, design, development, implementation, support and enhancements for performance tuning</li>
+               </ul>
+            </ol>
+         </div>
+         <div class="mainDetails">
+            <h3>
+               <svg width="400" height="50">
+                  <rect x="0" y="0" rx="10" ry="12" width="350" height="40" style="fill:Salmon;" />
+                  <text fill="white" font-size="20" font-family="Verdana" x="20" y="25">
+                     Professional Achievements:
+                  </text>
+               </svg>
+            </h3>
+            <ul>
+               <li>Awarded with <b>INSTA AWARD</b> for documenting <q>L100 for Enterprise Applications project</q></li>
+               <li>Earned an <b>Outstanding</b> rating for excellent performance consistently during 2016-2017 financial years</li>
+               <li>Authored a knowledge document on the topic <q>Automation of AD group synchronization in Tableau server</q> on the Infosys Internal portal</li>
+            </ul>
+         </div>
+         <div class="mainDetails">
+            <h3>
+               <svg width="400" height="50">
+                  <rect x="0" y="0" rx="10" ry="12" width="350" height="40" style="fill:Salmon;" />
+                  <text fill="white" font-size="20" font-family="Verdana" x="20" y="25">
+                     Leadership Activities:
+                  </text>
+               </svg>
+            </h3>
+            <ul>
+               <li>Conducted and coordinated College Cultural and Technical Fest called <b>AKANSHYA</b></li>
+               <li>Volunteered for two fundraising organizations called <a href="https://www.helpageindia.org/"><b>Helpage India</b></a> and <a href="https://www.aashayein.org/"><b>Aashayein </b></a>working for disadvantaged elderly and under privileged children respectively, during my engineering course</li>
+               <li>Collaborated with team members to organize weekly meetings and team-building activities during my professional career</li>
+            </ul>
+         </div>
+      </div>
+   </body>
+</html>
