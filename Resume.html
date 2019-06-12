@@ -2,37 +2,52 @@
 <!DOCTYPE html>
 <html>
    <head>
-	  <!--Creates a link between html and css sheet-->
+      <!--Gives the title of the web-page-->
+      <title>Priyanka Resume</title>
+      <!--Creates a link between html and css sheet-->
       <link rel="stylesheet" href="style.css">
    </head>
-   
    <!--Body of the page-->
    <body>
-      <div id="cv">
-         <div class="mainDetails">
-            <div id="headshot">
+      <!--div tag defines a division in the web page-->
+      <!--the id wholePage style is used from the css file-->
+      <div id="wholePage">
+         <!--class wholePagePadding is used for styling the padding of the whole page-->
+         <div class="wholePagePadding">
+            <!--id leftCorner is used for styling the top left corner of the page-->
+            <div id="leftCorner">
+               <!--Inserting the profile picture-->
                <img src="profilePic.jpeg" alt="My Picture">
             </div>
-            <div id="name">
+            <!--id introduction is used to style the introduction part of the page-->
+            <div id="introduction">
+               <!--Defining the headings-->
                <h1>Priyanka Mahakul</h1>
                <h2>Data Analyst</h2>
+               <!--Creating the logo using SVG constructs-->
                <svg height="50" width="50">
                   <defs>
+                     <!--Using radial color gradient-->
                      <radialGradient id="logo" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
                         <stop offset="0%" style="stop-color:rgb(255,255,255);stop-opacity:0" />
                         <stop offset="100%" style="stop-color:rgb(255,218,185);stop-opacity:1" />
                      </radialGradient>
                   </defs>
+                  <!--using a circle and text for the logo-->
                   <circle cx="25" cy="25" r="25" fill="url(#logo)"/>
                   <text fill="#FF7F50" font-size="20" font-family="Palatino" x="10" y="32">PM</text>
                </svg>
             </div>
+            <!--id contactDetails is used for styling the text in the right top corner of the page-->
             <div id="contactDetails">
+               <!--Defining all the contact details using unordered list-->
                <ul>
-                  <li><img  src="mailIcon.png" alt="e" width="18" height="12"></img><a id="mail" href="mailto:priyanka.mahakul17@gmail.com"> :priyanka.mahakul17@gmail.com</a></li>
+                  <!--Inserting image icons for all the contact information and styling it using ids from css file-->
+                  <li><img src="mailIcon.png" alt="e" width="18" height="12"></img><a id="mail" href="mailto:priyanka.mahakul17@gmail.com"> :priyanka.mahakul17@gmail.com</a></li>
                   <li><img src="phoneIcon.png" alt="m" width="18" height="15"></img> : (732)-766-0552</li>
-                  <li><img src="Linkedin.png" alt="m" width="18" height="15"></img> <a href="https://www.linkedin.com/feed/"> :More about me</a></li>
+                  <li><img src="Linkedin.png" alt="l" width="18" height="15"></img> <a id="linkedin" href="https://www.linkedin.com/feed/"> :More about me</a></li>
                   <li>
+                     <!--Inserting a download button to download the resume as a pdf file-->
                      <a href="Resume.pdf" download="Resume_PDF">
                         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
                         <button class="btn"><i class="fa fa-download"></i> Download</button>
@@ -40,15 +55,17 @@
                   </li>
                </ul>
             </div>
-            <div class="clear"></div>
          </div>
          <div>
+            <!--Inserting a line using svg-->
             <svg height="10" width="800">
                <line x1="0" y1="0" x2="800" y2="0" style="stroke:Salmon;stroke-width:4" />
             </svg>
          </div>
+         <!--class mainDetails is used for giving padding for the main details of the page-->
          <div class="mainDetails">
             <h3>
+               <!--Using svg to create rectangles for holding the headings-->
                <svg width="200" height="50">
                   <rect x="0" y="0" rx="10" ry="12" width="150" height="40" style="fill:Salmon;" />
                   <text fill="white" font-size="20" font-family="Verdana" x="20" y="25">
@@ -56,36 +73,44 @@
                   </text>
                </svg>
             </h3>
+            <!--Defining a table to hold the Education deatils-->
+            <!--Class myTable is used for styling the table-->
             <table class="myTable" style="width:100%">
                <tr>
-                  <th style="border-right: 2px solid Salmon;">Degree</th>
-                  <th style="border-right: 2px solid Salmon;">Graduation Year</th>
-                  <th style="border-right: 2px solid Salmon;">University</th>
-                  <th style="border-right: 2px solid Salmon;">Major</th>
+                  <!--Defining the headings of the table-->
+                  <th>Degree</th>
+                  <th>Graduation Year</th>
+                  <th>University</th>
+                  <th>Major</th>
                   <th>CGPA</th>
                </tr>
+               <!--Defining each row of the table-->
                <tr>
-                  <td style="border-right: 2px solid Salmon;">Bachelor of Technology</td>
-                  <td style="border-right: 2px solid Salmon;">2013</td>
-                  <td style="border-right: 2px solid Salmon;">
+                  <td>Bachelor of Technology</td>
+                  <td>2013</td>
+                  <td>
+                     <!--Providing link to the university---->
                      <a href="https://www.gita.edu.in/">Gandhi Institute For Technological Advancement</a>
                   </td>
-                  <td style="border-right: 2px solid Salmon;">Electrical and Electronics Engineering</td>
+                  <td>Electrical and Electronics Engineering</td>
                   <td>3.6</td>
                </tr>
                <tr>
-                  <td style="border-right: 2px solid Salmon;">Masters</td>
-                  <td style="border-right: 2px solid Salmon;">2020</td>
-                  <td style="border-right: 2px solid Salmon;">
+                  <td>Masters</td>
+                  <td>2020</td>
+                  <td>
+                     <!--Providing link to the university---->
                      <a href="https://www.njcu.edu/">New Jersey City University</a>
-                  </td style="border-right: 2px solid Salmon;">
-                  <td style="border-right: 2px solid Salmon;">Business Analytics and Data Science</td>
+                  </td>
+                  <td>Business Analytics and Data Science</td>
                   <td>4</td>
                </tr>
             </table>
          </div>
+         <!--Starting a new division-->
          <div class="mainDetails">
             <h3>
+               <!--Using svg rectangles for holding the headings-->
                <svg width="400" height="50">
                   <rect x="0" y="0" rx="10" ry="12" width="250" height="40" style="fill:Salmon;" />
                   <text fill="white" font-size="20" font-family="Verdana" x="20" y="25">
@@ -93,16 +118,19 @@
                   </text>
                </svg>
             </h3>
+            <!--Writing the skills as a list-->
             <ul>
                <li><b>Programming Languages:</b> C, C++, Java, HTML, SQL, Python</li>
-               <li><b>Databases::</b> MySQL, Teradata, Exasol, Oracle RDBMS, Microsoft SQL Server, PostGre SQL</li>
+               <li><b>Databases:</b> MySQL, Teradata, Exasol, Oracle RDBMS, Microsoft SQL Server, PostGre SQL</li>
                <li><b>Tools:</b> Tableau, DataStage, TIBCO, Alteryx</li>
                <li><b>Repository:</b> SVN, GIT</li>
                <li><b>General software:</b> Microsoft Office (Word, Excel, PowerPoint)</li>
             </ul>
          </div>
+         <!--Starting a new division-->
          <div class="mainDetails">
             <h3>
+               <!--Using svg rectangles for holding the headings-->
                <svg width="400" height="50">
                   <rect x="0" y="0" rx="10" ry="12" width="320" height="40" style="fill:Salmon;" />
                   <text fill="white" font-size="20" font-family="Verdana" x="20" y="25">
@@ -116,6 +144,7 @@
                </a>, Hyderabad, India<br>
                <b>Role:</b> Technology Analyst (October 2013- May 2018)
             </p>
+            <!--Providing the projects as aordered list and the roles and responsibilities under each project as unordered lists-->
             <ol>
                <li><b>Project Title: Customer Relationship Management (September 2017- May 2018)</b></li>
                <ul>
@@ -141,8 +170,10 @@
                </ul>
             </ol>
          </div>
+         <!--Starting a new division-->
          <div class="mainDetails">
             <h3>
+               <!--Using svg rectangles for holding the headings-->
                <svg width="400" height="50">
                   <rect x="0" y="0" rx="10" ry="12" width="350" height="40" style="fill:Salmon;" />
                   <text fill="white" font-size="20" font-family="Verdana" x="20" y="25">
@@ -150,14 +181,17 @@
                   </text>
                </svg>
             </h3>
+            <!--Providing the achievements as a list-->
             <ul>
                <li>Awarded with <b>INSTA AWARD</b> for documenting <q>L100 for Enterprise Applications project</q></li>
                <li>Earned an <b>Outstanding</b> rating for excellent performance consistently during 2016-2017 financial years</li>
                <li>Authored a knowledge document on the topic <q>Automation of AD group synchronization in Tableau server</q> on the Infosys Internal portal</li>
             </ul>
          </div>
+         <!--Starting a new division-->
          <div class="mainDetails">
             <h3>
+               <!--Using svg rectangles for holding the headings-->
                <svg width="400" height="50">
                   <rect x="0" y="0" rx="10" ry="12" width="350" height="40" style="fill:Salmon;" />
                   <text fill="white" font-size="20" font-family="Verdana" x="20" y="25">
@@ -165,12 +199,16 @@
                   </text>
                </svg>
             </h3>
+            <!--Providing the leadership activities as a list-->
             <ul>
                <li>Conducted and coordinated College Cultural and Technical Fest called <b>AKANSHYA</b></li>
                <li>Volunteered for two fundraising organizations called <a href="https://www.helpageindia.org/"><b>Helpage India</b></a> and <a href="https://www.aashayein.org/"><b>Aashayein </b></a>working for disadvantaged elderly and under privileged children respectively, during my engineering course</li>
                <li>Collaborated with team members to organize weekly meetings and team-building activities during my professional career</li>
             </ul>
          </div>
+         <!--End of the main division-->
       </div>
+      <!--End of the body-->
    </body>
+   <!--End of the html file-->
 </html>
