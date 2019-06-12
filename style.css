@@ -1,0 +1,143 @@
+/*This CSS file defines styling for the Resume.html file*/
+
+/*The following style is for the body and the divisions*/
+html,body,div{
+border:0;
+font:inherit;
+font-size:100%;
+margin:0;
+padding:0;
+vertical-align:baseline;
+}
+
+html, body {background: #181818;font-family:arial; color: #222;}
+
+/*The following id is for styling the whole page*/
+#wholePage {
+	width: 90%;
+	max-width: 800px;
+	background: #f3f3f3;
+	margin: 30px auto;
+}
+
+/*The following class is for styling the main details or content of the page*/
+.mainDetails {
+	padding: 1px 35px;
+}
+
+
+/*The following id is for styling the left corner of the page.*/
+#leftCorner {
+	width: 12.5%;
+	float: left;
+	margin-right: 30px;
+	padding-left: 10px;
+    padding-top: 8px;
+}
+
+/*This id is for styling the image.*/
+#leftCorner img {
+	width: 120%;
+	height: 300%
+	height: auto;
+	-webkit-border-radius: 50px;
+	border-radius: 50px;
+}
+
+/*This id is for styling the introduction part of the page.*/
+#introduction {
+	float: left;
+	font-family: 'Arial';
+	font-size: 12px;
+}
+
+/*For styling the heading 1*/
+#introduction h1 {
+	font-size: 2.5em;
+	font-weight: 700;
+	font-family: 'Arial';
+	margin-bottom: 0;
+	color:DimGray;
+}
+/*For styling the heading 2*/
+#introduction h2 {
+	font-size: 2em;
+	margin-left: 2px;
+	font-family: 'Arial';
+	margin-top: 0;
+	margin-bottom: 0;
+	color:DimGray;
+}
+
+/*The id is for styling the contact deatils in the right top corner of the page*/
+#contactDetails {
+	float: right;
+	margin-top: 20px;
+}
+
+#contactDetails ul {
+	list-style-type: none;
+	font-size: 1em;
+	margin-top: 2px;
+}
+
+#contactDetails ul li {
+	margin-bottom: 8px;
+	color: #444;
+	margin-right: 5px;
+}
+
+#contactDetails ul li a, a[href^=tel] { 
+	text-decoration: none;
+	
+}
+
+#contactDetails ul li a:hover { 
+	color: #cf8a05;
+}
+
+/*For styling the email id*/
+#mail{
+  color:Salmon;
+}
+
+/*For styling the linkedin*/
+#linkedin{
+	color:DimGray;
+}
+
+/*The class is used for styling the download button*/
+.btn {
+  background-color: coral  ;
+  border: none;
+  color: white;
+  padding: 10px 25px;
+  cursor: pointer;
+  font-size: 15px;
+}
+.btn:hover {
+  background-color: Salmon;
+}
+
+/*The class is used for styling the table of Education section*/
+table.myTable { 
+  border: 2px solid Salmon;
+  border-radius: 13px; 
+  text-align: center;
+  }
+table.myTable td, 
+table.myTable th {	
+  border-bottom: 2px solid Salmon;
+  padding: 10px; 
+  border-right: 2px solid Salmon;
+  }
+table.myTable tr:last-child > td {
+  border-bottom: none;
+}
+
+
+
+
+
+
+
